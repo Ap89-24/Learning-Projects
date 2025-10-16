@@ -1,0 +1,82 @@
+@font-face {
+    font-family: swing;
+    src: url(SwingingWake-Regular.ttf);
+}
+
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: swing;
+}
+html,
+body{
+height: 100%;
+width: 100%;
+}
+
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+    padding: 30px;
+    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.card{
+    height: 400px;
+    width: 300px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 20px pink
+
+
+}
+
+.card img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    bottom: -40%;
+    background: linear-gradient(transparent, lightblue);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.card:hover .bottom{
+    bottom: 0;
+    transition: all 0.8s ease;
+}
+
+
+
+.bottom h4{
+    color: white;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.bottom h3{
+    color: white;
+    padding: 10px 15px;
+    font-weight: 300;
+}
+
+.bottom h3:hover{
+    color: red;
+    cursor: pointer;
+}

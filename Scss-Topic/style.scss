@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+@mixin centreflex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin buttonstyle($bg-color){
+    padding: 10px 20px;
+    background-color: $bg-color;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    @include centreflex();
+    background-color: black;
+
+
+    section{
+        height: 50%;
+        width: 50%;
+        @include centreflex();
+        background-color: rgb(236, 206, 206);
+    }
+
+    h1{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 3rem;
+        color: royalblue;
+    }
+
+    .blue{
+        @include buttonstyle(blue);
+    }
+
+    .red{
+        @include buttonstyle(red);
+    }
+}
