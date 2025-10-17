@@ -22,11 +22,16 @@ body{
     background-color: black;
 }
 
+section{
+    max-width: 2000px;
+}
+
 // Mobile View.....
 main{
     width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 
     section{
         width: 100%;
@@ -90,6 +95,8 @@ main{
     }
 }
 
+//Desktop View....
+
 @media (min-width: 1024px){
     main{
         section{
@@ -108,7 +115,6 @@ main{
 
             .bottom{
                 width: 50%;
-                justify-content: space-between;
             }
            
         }
