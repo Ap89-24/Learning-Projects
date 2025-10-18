@@ -23,7 +23,7 @@ body {
   background-color: black;
 }
 
-section {
+section.view1 {
   max-width: 2000px;
 }
 
@@ -33,20 +33,20 @@ main {
   flex-direction: column;
   align-items: center;
 }
-main section {
+main section.view1 {
   width: 100%;
   display: flex;
   flex-direction: column;
   padding: 1rem;
 }
-main section .top {
+main section.view1 .top {
   width: 100%;
 }
-main section .top img {
+main section.view1 .top img {
   width: 100%;
   border-radius: 10px;
 }
-main section .bottom {
+main section.view1 .bottom {
   background-color: #1e1e1e;
   display: flex;
   flex-direction: column;
@@ -54,47 +54,79 @@ main section .bottom {
   border-radius: 10px;
   margin-top: 1rem;
 }
-main section .bottom .text {
+main section.view1 .bottom .text {
   margin-top: 3rem;
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
 }
-main section .bottom .text h1 {
+main section.view1 .bottom .text h1 {
   font-weight: 100;
   font-size: 3rem;
 }
-main section .bottom .text p {
+main section.view1 .bottom .text p {
   font-size: 1.2rem;
   line-height: 2rem;
   color: #b3b3b3;
 }
-main section .bottom .text i {
+main section.view1 .bottom .text i {
   padding: 5px 8px;
   background-color: #282828;
   border-radius: 50%;
   border: 1px solid rgb(207, 207, 207);
 }
-main section .bottom .text .text1 {
+main section.view1 .bottom .text .text1 {
   display: flex;
   gap: 12px;
   font-size: 1rem;
   color: white;
 }
+main section.view2 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 2rem;
+}
+main section.view2 .top, main section.view2 .bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+main section.view2 .top .element, main section.view2 .bottom .element {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+main section.view2 .top .element small, main section.view2 .bottom .element small {
+  opacity: 0.5;
+}
+main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
 
 @media (min-width: 1024px) {
-  main section {
+  main section.view1 {
     flex-direction: row;
   }
-  main section .top {
+  main section.view1 .top {
     width: 50%;
     margin-top: 1rem;
   }
-  main section .top img {
+  main section.view1 .top img {
     width: 95%;
     height: 100%;
   }
-  main section .bottom {
+  main section.view1 .bottom {
     width: 50%;
+  }
+}
+@media (min-width: 1024px) {
+  main section.view2 {
+    flex-direction: row;
+    padding: 1rem;
+    margin-top: 1rem;
   }
 }/*# sourceMappingURL=style.css.map */
