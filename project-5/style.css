@@ -1,6 +1,6 @@
 @font-face {
   font-family: lora;
-  src: url(./Lora/static/Lora-Regular.ttf);
+  src: url(https://assets.website-files.com/63cffb7c16ab3347fc9734c8/63cffc20aa8997095067596f_Satoshi-Light.woff);
 }
 * {
   margin: 0;
@@ -106,6 +106,45 @@ main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
   font-size: 2rem;
   font-weight: 200;
 }
+main section.view3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+main section.view3 .top {
+  width: 100%;
+}
+main section.view3 .top img {
+  width: 100%;
+  border-radius: 10px;
+}
+main section.view3 .bottom > p {
+  text-transform: uppercase;
+}
+main section.view3 .bottom {
+  background-color: #1e1e1e;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+main section.view3 .bottom .text {
+  margin-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+main section.view3 .bottom .text h1 {
+  font-weight: 100;
+  font-size: 3rem;
+}
+main section.view3 .bottom .text p {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  color: #b3b3b3;
+}
 
 @media (min-width: 1024px) {
   main section.view1 {
@@ -121,6 +160,7 @@ main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
   }
   main section.view1 .bottom {
     width: 50%;
+    justify-content: space-between;
   }
 }
 @media (min-width: 1024px) {
@@ -128,5 +168,27 @@ main section.view2 .top .element h2, main section.view2 .bottom .element h2 {
     flex-direction: row;
     padding: 1rem;
     margin-top: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  main section.view3 {
+    flex-direction: row-reverse;
+    gap: 2rem;
+  }
+  main section.view3 .top {
+    width: 50%;
+    margin-top: 1rem;
+  }
+  main section.view3 .top img {
+    width: 95%;
+    height: 100%;
+  }
+  main section.view3 .bottom {
+    width: 50%;
+    justify-content: space-between;
+  }
+  main section.view3 .bottom .para {
+    display: flex;
+    gap: 1.5rem;
   }
 }/*# sourceMappingURL=style.css.map */
